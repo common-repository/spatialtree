@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.scrollbar_wrap {
+	position: relative;
+    overflow: hidden;
+}
+.main_content_block .scrollbar_wrap {
+	height: 605px;
+}
+.popup_cross .scrollbar_wrap {
+	height: 360px;
+}
+.popup_graph .scrollbar_wrap {
+	height: 690px;
+}
+.ps-container .ps-scrollbar-x-rail {
+	display: none;	
+}
+
+.ps-container .ps-scrollbar-y-rail {
+    display: block !important;
+    position: absolute; /* please don't change 'position' */
+    right: 0px; /* there must be 'right' for ps-scrollbar-y-rail */
+    width: 10px;
+    border: 1px solid #dedede;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .15);  /* Safari<5.1, Chrome<10.0*/ 
+    -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, .15); /* Firefox<4.0 */
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .15);  /* IE9.0+, Chrom10.0+, Opera 10.5+, Safari5.1+, Firefox4.0+ */	
+	background: #f5f5f5;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ps-container .ps-scrollbar-y {
+    position: absolute; /* please don't change 'position' */
+    right: 1px; /* there must be 'right' for ps-scrollbar-y */
+	top: 5px;
+    width: 6px;
+	margin: 2px 0;
+    background: #fda313;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .15);  /* Safari<5.1, Chrome<10.0*/ 
+    -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, .15); /* Firefox<4.0 */
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .15);  /* IE9.0+, Chrom10.0+, Opera 10.5+, Safari5.1+, Firefox4.0+ */
+    border: 1px solid #e79511;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ps-container.ie6 .ps-scrollbar-y {
+    font-size: 0; /* fixed scrollbar height in xp sp3 ie6 */
+}
